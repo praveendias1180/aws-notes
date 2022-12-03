@@ -2,15 +2,21 @@ import { useState } from 'react';
 import { CreateNote, NavBar, NoteUICollection, UpdateNote } from './ui-components'
 
 import { withAuthenticator } from '@aws-amplify/ui-react'
+import { DataStore } from 'aws-amplify'
 
-function App() {
+function App({ signOut }) {
   const [showCreateModal, setshowCreateModal] = useState(false)
   const [showUpdateModal, setshowUpdateModal] = useState(false)
   const [updateNote, setupdateNote] = useState()
   return (
     <>
       <NavBar width='100%' marginBottom='20px' overrides={{
-          Button31632483: { onClick: () => setshowCreateModal(true)}
+          Button31632483: { onClick: () => setshowCreateModal(true)},
+          Button31632487: { onClick: async () => {
+              await DataStore.clear()
+              signOut()
+            }
+          }
         }}
       />
       <div className='container'>
