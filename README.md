@@ -49,8 +49,14 @@ npm install -g @aws-amplify/cli
 
 ![](images/figma-update.png)
 
-# Run 
+## Run 
 
 ```
 amplify pull
 ```
+
+# Frontend Hosting
+
+![](images/hosting.png)
+
+![](images/frontend-hosting.png)
