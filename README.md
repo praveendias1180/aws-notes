@@ -38,3 +38,7 @@ npm install -g @aws-amplify/cli
 # Notes App Ready
 
 ![](images/notes-app.png)
+
+# Authentication and Authorization
+
+![](images/users.png)
