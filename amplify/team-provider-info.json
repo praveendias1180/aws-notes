@@ -10,6 +10,11 @@
       "StackName": "amplify-notesapp-staging-20221",
       "StackId": "arn:aws:cloudformation:us-east-1:695758167061:stack/amplify-notesapp-staging-20221/8667a9d0-72ae-11ed-b555-12ca745b4a31",
       "AmplifyAppId": "d3l81rlr63qo2n"
+    },
+    "categories": {
+      "auth": {
+        "NotesApp": {}
+      }
     }
   }
 }
