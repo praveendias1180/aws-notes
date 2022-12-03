@@ -14,3 +14,21 @@ code {
 
 /* src/index.css */
 @import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+/* Add to the end of /src/index.css */
+.modal {
+  position: absolute;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  left: 0;
+  right: 0;
+  top: 100px;
+  border: .5px solid grey;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 900px;
+}
