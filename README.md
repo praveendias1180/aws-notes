@@ -28,3 +28,9 @@ When you create a data model with AWS Amplify Studio, you are using DataStore. D
 # AWS Amplify UI Kit
 
 ![](images/aws-amplify-ui-kit.png)
+
+# Install Amplify CLI
+
+```
+npm install -g @aws-amplify/cli
+```
