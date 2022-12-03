@@ -1,17 +1,43 @@
+import { useState } from 'react';
 import { CreateNote, NavBar, NoteUICollection, UpdateNote } from './ui-components'
 
 function App() {
+  const [showCreateModal, setshowCreateModal] = useState(false)
+  const [showUpdateModal, setshowUpdateModal] = useState(false)
+  const [updateNote, setupdateNote] = useState()
   return (
     <>
-      <NavBar width='100%' marginBottom='20px'/>
+      <NavBar width='100%' marginBottom='20px' overrides={{
+          Button31632483: { onClick: () => setshowCreateModal(true)}
+        }}
+      />
       <div className='container'>
-        <NoteUICollection />
+      <NoteUICollection overrideItems={({item, idx}) => {
+        return {
+          overrides: {
+            Vector31472745: {
+              onClick: () => {
+                setshowUpdateModal(true)
+                setupdateNote(item)
+              }
+            }
+          }
+        }
+      }}/>
       </div>
-      <div className='modal' style={{display: 'none'}}>
-        <CreateNote />
+      <div className='modal' style={{display: showCreateModal === false && 'none'}}>
+        <CreateNote overrides={{
+          MyIcon: {as: 'button', onClick: () => setshowCreateModal(false)}
+        }}/>
       </div>
-      <div className='modal' style={{display: 'none'}}>
-        <UpdateNote />
+      <div className='modal' style={{display: showUpdateModal === false && 'none'}}>
+        <UpdateNote 
+          note={updateNote} overrides={{
+            MyIcon: {
+              as: 'button',
+              onClick: () => setshowUpdateModal(false)
+            }
+        }}/>
       </div>
     </>
   );

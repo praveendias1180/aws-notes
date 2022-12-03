@@ -33,5 +33,6 @@ code {
 }
 
 .amplify-button{
-  background-color: white !important;
+  background-color: #a9a9a9 !important;
+  color: #fff !important;
 }
