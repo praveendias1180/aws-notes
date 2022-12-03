@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { CreateNote, NavBar, NoteUICollection, UpdateNote } from './ui-components'
 
+import { withAuthenticator } from '@aws-amplify/ui-react'
+
 function App() {
   const [showCreateModal, setshowCreateModal] = useState(false)
   const [showUpdateModal, setshowUpdateModal] = useState(false)
@@ -43,4 +45,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
