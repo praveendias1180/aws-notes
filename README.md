@@ -42,3 +42,15 @@ npm install -g @aws-amplify/cli
 # Authentication and Authorization
 
 ![](images/users.png)
+
+# Figma Theme Update
+
+![](images/fetching.png)
+
+![](images/figma-update.png)
+
+# Run 
+
+```
+amplify pull
+```
