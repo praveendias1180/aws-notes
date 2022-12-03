@@ -1,6 +1,6 @@
 # Notes App
 
-![](images/final-notes-app)
+![](images/notes-app.png)
 
 # IndexedDB | DynomoDB | Amplify DataStore
 
@@ -34,3 +34,7 @@ When you create a data model with AWS Amplify Studio, you are using DataStore. D
 ```
 npm install -g @aws-amplify/cli
 ```
+
+# Notes App Ready
+
+![](images/notes-app.png)

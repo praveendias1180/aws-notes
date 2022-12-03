@@ -29,6 +29,9 @@ code {
 }
 
 .container {
-  margin: 0 auto;
   max-width: 900px;
+}
+
+.amplify-button{
+  background-color: white !important;
 }
